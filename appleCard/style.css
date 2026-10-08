@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+}
+
+body {
+    background-color: gainsboro;
+}
+
+.card {
+    background-color: white;
+    height: 600px;
+    width: 500px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
+}
+
+.card-tags {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    position: relative;
+}
+
+.tag-fresh {
+    background-color: #29552d;
+    color: white;
+    height: 100px;
+    padding: 10px;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    position: absolute;
+    transform: translateY(25px);
+}
+
+.info-tags {
+    display: flex;
+    gap: 20px;
+    margin-left: auto;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.card-icon {
+    height: 50px;
+}
+ 
+.card-img {
+    width: 100%;
+    border-radius: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.card-heading {
+    text-align: center;
+    font-size: 2rem;
+    color: #30623c;
+}
+
+.price-show1 {
+    font-size: 2.6rem;
+    font-weight: 600;
+}
+
+.price-show2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.mrp-off {
+    color: rgb(125, 125, 125);
+}
+
+.mrp-off span {
+    text-decoration: line-through;
+}
+
+.divider {   
+    height: 20px;
+    width: 2px;
+    background-color: black;
+}
+
+.btn-cont {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.card-btn {
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 200ms ease-in;
+}
+
+.weight-btn {
+    background-color: white;
+    border: 1px solid grey;
+    width: 280px;
+}
+
+.weight-btn:hover {
+    background-color: rgb(235, 235, 235);
+}
+
+.cart-btn {
+    background-color: #44b961;
+    border: none;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.cart-btn:hover {
+    background-color: #3ba155;
+}

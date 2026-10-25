@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+@property --x {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 0;
+}
+
+@property --y {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 0;
+}
+
+.eye {
+    height: 80px;
+    aspect-ratio: 1;
+    border: 5px solid black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+}
+
+.outer-circle {
+    height: 45px;
+    aspect-ratio: 1;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(211, 255, 193);
+    position: absolute;
+    transform: translate(var(--x), var(--y));
+}
+
+.inner-circle {
+    height: 10px;
+    aspect-ratio: 1;
+    background-color: black;
+    border-radius: 100%;
+    position: relative;
+}
+
+.shine {
+    height: 90%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top: -75%;
+    right: -75%;
+}
+
